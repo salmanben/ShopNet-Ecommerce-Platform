@@ -1,0 +1,236 @@
+.main{
+    min-height: calc(100vh - 292.46px);
+}
+.card{
+  display: flex;
+  border-radius: 10px;
+  max-width: 700px;
+  margin:50px auto;
+  min-height: 450px;
+  background-color: white;
+  box-shadow: 0 0 3px #938f8f;
+  border: solid 1px #ddd;
+
+}
+.product{
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+.container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 90%;
+     height: 110%;
+     background-color: white;
+     box-shadow: 0 0 3px #ddd;
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     border-radius: 10px;
+     position: relative;
+}
+.container > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1000;
+}
+.container .background{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #d90429;
+    border-radius: 10px 10px 0px 0px
+}
+.content{
+    width: 50%;
+    background-color: #ffffff;
+    border-radius:0px 10px 10px 0px ;
+    padding:50px  15px 15px 15px;
+    position: relative;
+}
+.content h2{
+    color:var(--main-color);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.content .price{
+    font-size: 40px;
+    color:#4cc9f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: absolute;
+    top:10px ;
+    right: 20px;
+}
+.content .short_description{
+    line-height: 1.4;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+h3{
+    color:var(--main-color);
+    margin-top: 15px;
+}
+.variants{
+    margin-top: 15px;
+}
+.variants > div{
+   display: flex;
+   margin-bottom: 10px;
+   gap: 15px;
+}
+.variants h4{
+    color:#d90429
+}
+.variants > div p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+}
+.variants > div p span{
+    font-size: 14px;
+    color:grey;
+}
+.active{
+    color:#4cc9f0
+}
+.content .actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.actions > *{
+    color:#fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.content .actions .add-cart{
+   background-color: #d90429;
+   border: solid 1px #d90429;
+   color: white;
+}
+.content .actions  .add-cart:hover{
+    background:white;
+    color:#d90429
+}
+.add-cart i{
+    margin-right: 5px;
+}
+.visit-store{
+    background-color: #4cc9f0;
+    text-decoration: none;
+    border: solid 1.5px #4cc9f0;
+}
+
+.visit-store:hover{
+    background-color: white;
+    color: #4cc9f0;
+}
+.visit-store i{
+    margin-left: 5px;
+}
+.contact-seller{
+    color:white;
+    background-color: #4895ef;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+
+}
+.contact-seller:hover{
+    background-color: white;
+    color:#4895ef;
+    border: solid 1px #4895ef;
+}
+
+@media (max-width:720px){
+    .card{
+        flex-direction: column;
+        max-width: 400px;
+        position: relative;
+        top:20px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .product{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+        
+        ;
+    }
+    .product .container{
+        width: 95%;
+        height: 180px;
+        border-radius: 10px 10px 0px 0px;
+        margin-right: 0px auto;
+        background-color: var(--main-color);
+        position: relative;
+    }
+    .container img{
+        height: 150px;
+        width: 200px;
+        position: absolute;
+        bottom:10px
+    }
+
+    .content{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding-top: 10px;
+        ;
+    }
+    .content .price{
+        font-size: 27px;
+        top:5px;
+        right: initial;
+        left: 10px;
+    }
+    .content h2{
+        font-size: 26px;
+        margin-top: 35px;
+    }
+    .content button{
+        width: 130px;
+        font-size: 16px;
+    }
+    
+}
+
+.long-description{
+    margin:0 10px 50px;
+    padding: 10px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 4px;
+}
+.long-description p{
+    line-height: 1.4;
+    color:grey;
+    margin-top: 15px;
+}

@@ -1,0 +1,161 @@
+.main{
+    margin: 50px 200px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    min-height: calc(100vh - 292.46px);
+}
+@media (max-width:977px)
+{
+    .main{
+        margin:50px 10px;
+    }
+}
+
+.main > div{
+    border: solid 1px #ddd;
+    background-color: white;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 5px;
+    height: fit-content;
+}
+@media (max-width:709px)
+{
+    .main{
+       flex-direction: column;
+       align-items: center;
+    }
+    .main > div{
+        flex:1;
+    }
+    .invoice{
+        max-width: 100%;
+    }
+}
+
+.form{
+    padding:35px 10px 10px 10px;
+    max-width: 350px;
+    position: relative;
+}
+form input{
+    outline-color: #ef233c;
+    border: solid 1.5px #ef233c;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 10px 0px;
+}
+form label{
+    position: relative;
+    top:6px
+}
+textarea{
+    outline-color: #ef233c;
+    border: solid 1.5px #ef233c;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 10px 0px;
+    resize: none; 
+    height: 100px;
+}
+
+form button{
+    width: 100%;
+    outline-color: #ef233c;
+    border: solid 1.5px #ef233c;
+    border-radius: 7px;
+    background-color: #ef233c;
+    color:white;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s
+    ;
+}
+
+form div.name{
+    display: flex;
+    column-gap: 40px;
+}
+form div input{
+    flex:1
+}
+
+.invoice{
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+}
+.invoice h4{
+    font-weight: 500;
+}
+.shipping{
+    border-bottom: solid 1px #ddd;
+    margin-bottom: 15px;
+}
+.shipping h4{
+    margin-bottom: 10px;
+}
+.shipping div  label{
+    margin-left: 8px;
+}
+.shipping div{
+    margin-bottom: 10px;
+}
+.invoice div:not(.shipping){
+    margin-bottom: 15px;
+    display: flex;
+}
+.invoice h5{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.invoice .total h3{
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.invoice .total h4{
+    font-weight: 500;
+    font-size: 18px;
+}
+.invoice .coupon-code{
+    outline: #ef233c;
+    border:solid 1.5px #ef233c;
+    border-radius: 20px;
+    padding: 10px 7px;
+    width: 190px;
+}
+.invoice button{
+    border: #ef233c;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    background: #ef233c;
+    font-size: 16px;
+    cursor: pointer;
+}
+.coupon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+p.error{
+    color:#721c24;
+    background-color:  #f8d7da;
+    padding: 10px 0px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+    display: none;
+    
+ }
+

@@ -1,0 +1,259 @@
+.search {
+  max-width: 300px;
+  position: relative;
+}
+.search input {
+  outline-color: #4cc9f0;
+  border: solid 1.5px #4cc9f0;
+  border-radius: 7px;
+  padding: 8px;
+  padding-left: 25px;
+  width: 100%;
+}
+.search i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7px;
+  color: #4cc9f0;
+  pointer-events: none;
+}
+.create-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.create-item .search{
+  width: 300px 
+}
+.create-item > a {
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin_bottom: 20px;
+  background-color: #4361ee;
+}
+
+.content > h4 
+{
+  margin: 10px 0;
+}
+.content > h4  span{
+  font-weight: normal;
+  
+}
+.back-link{
+  color:white;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 0px 5px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.back-link i{
+ margin-right: 5px;
+}
+.table {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  margin: 50px 0;
+  border-radius: 5px;
+  border: solid 1.5px #4361ee;
+  border-spacing: 0;
+}
+
+
+th {
+  background-color: #4cc9f0;
+  color: #fff;
+  font-weight: normal;
+}
+th:first-child {
+  border-radius: 3px 0 0 0;
+}
+th:last-child {
+  border-radius: 0 3px 0 0;
+}
+
+tbody tr:last-child td:first-child{
+  border-radius: 0 0 3px;
+}
+tbody tr:last-child td:last-child{
+  border-radius: 0 0 3px 0;
+}
+th,
+td {
+  text-align: center;
+  padding: 10px 5px;
+  vertical-align: middle;
+}
+td {
+  color: #001427;
+}
+td img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top:4.5px
+}
+td img.banner{
+  height: 80px;
+
+}
+tr:nth-child(even) {
+  background-color: #f5f3f4;
+}
+table a {
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  border-radius: 5px;
+}
+.update {
+  background-color: #007bff;
+}
+.update:hover {
+  box-shadow: 0px 0px 5px #007bff;
+}
+.show {
+  background-color: #4361ee;
+}
+.show:hover {
+  box-shadow: 0px 0px 5px #4361ee;
+}
+.delete {
+  background-color: #dc3545;
+}
+.delete:hover {
+  box-shadow: 0px 0px 5px #e24d4c;
+}
+
+.variants, .variant-items{
+  background-color: #4cc9f0;
+  color:white;
+}
+.card {
+  max-width: 400px;
+  background: white;
+  box-shadow: 0 0 3px silver;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+}
+.card  img{
+  width: 100px;
+  height: 120px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.card-header {
+  background-color: #f8f4f4;
+  padding: 5px;
+  margin-bottom: 8px;
+  border-radius: 5px 5px 0 0;
+}
+.card-header h4 {
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+form {
+  padding: 5px;
+}
+form input,
+form textarea,
+form select {
+  display: block;
+  width: 100%;
+  outline-color: #4cc9f0;
+  border: solid 1.5px #4361ee;
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+}
+textarea {
+  height: 250px;
+  resize: none;
+}
+form button {
+  display: block;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+p.message {
+  text-align: center;
+  padding:  8px;
+  position: relative;
+  bottom: 10px;
+  display: none;
+}
+p.error {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+p.success {
+  color: #ffffff;
+  background-color: #28a745;
+}
+.is_default {
+  color: white;
+  border-radius: 5px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.is_default.Yes {
+  background-color: #28a745;
+}
+.is_default.No {
+  background-color: #ffa500;
+}
+a{
+  text-decoration: none;
+}
+
+.min-cost{
+  display: none;
+}
+.status-order{
+  padding:2px  5px;
+  border-radius: 5px;;
+  color:white;
+}
+select{
+  border: solid 1px #1d3557;
+  border-radius: 3px;
+}
+.create-method{
+  background-color: white;
+  box-shadow: 0 0 3px #ddd;
+  border: solid 1px #ddd;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  max-width: 350px;
+}
+.create-method form{
+  padding: 10px;
+}

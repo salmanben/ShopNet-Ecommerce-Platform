@@ -1,0 +1,235 @@
+.container{
+    margin: 0 10px;
+    min-height: calc(100vh - 250px);
+}
+.main{
+    max-width: 900px;
+    margin:50px auto ;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#ffffff ;
+    box-shadow: 0px 0px 3px #ddd;
+    border: solid 1px #ddd;
+    position: relative;
+    
+}
+
+.main h2{
+   font-family: 'Dosis', sans-serif;
+   font-weight: normal;
+   color:#1d3557;
+   margin-bottom: 15px;
+}
+.main .container{
+    display: flex;
+    margin-top: 30px;
+}
+.main .products{
+    margin-top:20px;
+    flex:1
+}
+.main .select-all{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+
+.main input[type = "checkbox"]{
+
+    width: 20px ;
+    height: 20px;
+    accent-color:#e63946;;
+ }
+.select-all h3{
+    margin-left: 10px;
+    color:#1d3557;
+    font-weight: normal;
+    ;
+}
+.select-all input{
+    width: 25px ;
+    height: 25px;
+}
+
+.main ul{
+    list-style: none   
+
+}
+
+.main li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px 40px 0px;
+    position: relative;
+}
+.main li:not(:last-child){
+    border-bottom: solid 1px #ccc;
+}
+.main li > div{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+
+.main li > div:last-child{
+    justify-content: space-between;
+}
+.main li div.variants{
+    flex-direction: column;
+    gap: 8px;
+}
+.main li div.variants div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main li div.variants div label{
+    display: inline-block;
+    min-width: 60px;
+}
+.main li div.variants select{
+    outline: none;
+    width: 120px;
+    padding: 5px 0;
+    border: solid 1px #e63946;
+    border-radius: 5px
+    ;
+}
+.main li img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0px 15px;
+    
+
+}
+.main li h3{
+    color:#1d3557;
+    font-weight: normal;
+    font-size: 15px;
+    width: 100px;
+    white-space: wrap;
+    word-break: break-all;
+}
+.main li .count {
+    width: 80px;
+    border: solid 1px #1d3557;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 5px;
+}
+.main li .count .plus,li .count .moins{
+    cursor: pointer;
+}
+.main li .price{
+   color:#e63946;
+}
+.main li .fa-x{
+    cursor: pointer;
+}
+
+.active{
+    color:#3a86ff
+}
+.payer{
+   position: absolute;
+   top:10px;
+   right: 10px;
+   background-color: #e63946;
+   width: 35%;
+   border-radius: 15px;
+   padding: 15px;
+}
+.payer h3{
+    color:#fff;
+    margin-bottom:20px;
+    font-size: 26px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+
+}
+
+ .payerBtn{
+  outline-color:#3a86ff;
+  border: solid 1.5px #3a86ff;
+  border-radius: 7px;
+  width: 100%;
+  color:#3a86ff;
+  background-color: white;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  
+ }
+ .payerBtn:hover{
+    background-color: #3a86ff;
+    color:white
+   
+ }
+
+
+
+@media screen and (max-width:800px){
+
+    .main li{
+     flex-direction: column;
+     row-gap: 25px;
+     align-items: flex-start;
+    }
+
+    .main li > div{
+        width: 100% !important;
+        justify-content: start !important;
+    }
+    .main li > div:last-child{
+        justify-content: space-between !important;
+    }
+    .main li h3{
+        flex:1;
+    }
+    .main li div.variants{
+        flex-direction: row;
+        column-gap: 25px;
+        flex-wrap: wrap;
+    }
+    .main li div.variants div{
+       
+        justify-content: start;
+    }
+
+ 
+ }
+@media screen and (max-width:650px){
+    .payer{
+        width: 300px;
+    }
+       
+     
+  }
+@media screen and (max-width:550px){
+    .main{
+        padding: 15px 5px;
+    }
+
+    .content{
+        padding-bottom: 150px;
+    }
+   .payer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:10px;
+    top: initial;
+    width: calc(100% - 10px) ;
+
+   }
+ 
+ }
+

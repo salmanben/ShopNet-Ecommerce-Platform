@@ -1,0 +1,179 @@
+  .container{
+    min-height: calc(100vh - 292.46px);
+  }
+  
+  .main {
+    margin: 50px 10px;
+    position: relative;
+  }
+  
+  .table {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 5px;
+    border: solid 1.5px #ef233c;
+    border-spacing: 0;
+  }
+  
+  th {
+    background-color: #ef233c;
+    color: #fff;
+    font-weight: normal;
+  }
+  th:first-child {
+    border-radius: 3px 0 0 0;
+  }
+  th:last-child {
+    border-radius: 0 3px 0 0;
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 10px 5px;
+    vertical-align: middle;
+  }
+  td {
+    color: #001427;
+  }
+  td img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f5f3f4;
+  }
+  table a.show {
+    color: #fff;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+  }
+  .show {
+    background-color: #ef233c;
+  }
+  .show:hover {
+    box-shadow: 0px 0px 5px #ef233c;
+  }
+  .status-order {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .no-orders {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 100px);
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1.5px #e63946;
+    background: white;
+    box-shadow: 0 0 3px #ddd;
+    padding: 7px 0;
+    display: none;
+  }
+  .no-orders p {
+    font-size: 26px;
+  }
+  
+  .details {
+    margin: 40px 10px;
+    background-color: white;
+    box-shadow: 0 0 3px #ddd;
+    border: solid 1px #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .details h4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .details h4 span {
+    white-space: wrap;
+    word-break: break-all;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .info ul{
+    list-style: none;
+  }
+  
+  .shipping-info h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .shipping-info ul li {
+    margin-bottom: 7px;
+  }
+  .shipping-info ul li span {
+    font-size: 15px;
+  }
+  .shipping-info ul li span:first-child {
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  .shipping-method h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .shipping-method h5 span:last-child {
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  
+ 
+  .table td img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .variants p span:first-child {
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  .unit-price,
+  td.total {
+    font-weight: 600;
+  }
+  .invoice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 350px;
+    justify-content: space-between;
+  }
+  
+  .invoice h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }

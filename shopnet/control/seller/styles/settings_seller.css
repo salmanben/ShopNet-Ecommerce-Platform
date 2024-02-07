@@ -1,0 +1,156 @@
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 0 3px silver;
+  border:solid 1px #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  max-width:750px;
+  position: relative;
+
+}
+@media (max-width:830px)
+{
+
+}
+.user-img {
+  text-align: center;
+  transform: translateY(-50%);
+ 
+}
+.user-img img{
+  width: 95px;
+  height: 95px;
+  border: solid 2.5px #ef233c;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  background-color: white;
+}
+
+.message {
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  left: 0px;
+  top:0px;
+  width: 100%;
+  text-align: center;
+  z-index: 11;;
+  padding: 10px 0px;
+  display: none;
+}
+p.error{
+  color:#721c24;
+  background-color:  #f8d7da;
+}
+p.success{
+  color:#ffffff;
+  background-color: #28a745;
+}
+form {
+   display: flex;
+   column-gap: 30px;
+   margin-bottom: 50px;
+   position: relative;
+   bottom: 30px;
+}
+
+form > div{
+   flex:1
+}
+form i:not(.fa-eye) {
+  margin-right: 6px;
+  font-size: 17px;
+  color: #ef233c;
+}
+
+form > div > div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+input {
+ 
+  outline-color: #ef233c;
+  border: solid 1.5px #ef233c;
+  border-radius: 5px;
+  padding: 9px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+
+form i.active {
+  color: #ef233c;
+}
+
+img.banner{
+  width: 100%;
+  height: 170px;
+  border-radius: 5px;
+}
+.signup-btn{
+  display: block;;
+  color: white;
+  border:solid 1.5px #ef233c;
+  border-radius: 5px;
+  font-size: 16px;
+  padding:5px 15px;
+  background-color: #ef233c;
+  cursor: pointer;
+  position: absolute;
+  left:0;
+  bottom: -50px;
+  z-index: 1;
+  overflow: hidden;
+}
+.signup-btn::after {
+  content: "";
+  width: 150px;
+  height: 80px;
+  border-radius: 70%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  background-color: #fff;
+  transition: 0.3s;
+  z-index: -1;
+}
+.signup-btn:hover {
+  color: #ef233c;
+}
+.signup-btn:hover::after {
+  left: -10px;
+  transform: translate(0, -50%);
+}
+
+@media (max-width:830px)
+{
+  form{
+    flex-direction: column;
+    row-gap:10px;
+    column-gap: 0;
+  } 
+  img.banner{
+     height: 130px;
+  }
+}
+@media (max-width:450px)
+{
+  .form{
+    margin-top: 70px;
+  } 
+  img.banner{
+    height: 80px;
+ }
+}

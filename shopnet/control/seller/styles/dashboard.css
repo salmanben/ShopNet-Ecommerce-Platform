@@ -1,0 +1,91 @@
+.content h3 {
+  color: black;
+  margin: 20px 0px;
+}
+.content .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 30px;
+}
+.box{
+  border-radius: 5px;
+  border: solid 1px #ddd;
+  background-color: white;
+  box-shadow: 0 0 3px #ddd;
+  padding: 5px;
+  display: flex;
+  min-height: 80px;
+
+}
+.box .icon{
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 5px;
+  background-color:#4361ee;
+}
+.box .icon i{
+  color: white;
+  font-size: 16px;
+  transform: scale(2);
+}
+.box .text{
+  margin-left: 20px;
+  text-align: center;
+}
+.box .icon.total-orders{
+   background-color: #4361ee;
+}
+.box .icon.completed-orders{
+  background-color: #0ABF30;
+}
+.box .icon.pending-orders{
+  background-color: #E9BD0C;
+}
+.box .icon.total-earnings{
+  background-color: #ef233c;
+}
+.box .icon.total-products{
+  background-color: #9113a4;
+}
+
+.date{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.date label{
+  display: inline-block;
+  width: 75px;
+}
+
+.date input{
+  outline: #4361ee;
+  border: solid 1px #4361ee;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.year{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.charts{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 100%;
+  overflow-x: auto;
+
+}
+
+.charts div {
+  height: 250px;
+}
+
+

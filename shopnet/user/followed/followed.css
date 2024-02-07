@@ -1,0 +1,90 @@
+.main{
+    margin: 50px 10px;
+    min-height: calc(100vh - 319px);
+    position: relative;
+}
+
+.main .search-followed{
+    position: relative;
+    max-width: 300px;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.main .search-followed input{
+    outline-color: #e63946;
+    border:solid 1.5px #e63946; 
+    border-radius: 7px;
+    padding: 10px 25px;
+    width:100%;
+}
+.main .search-followed i{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:7px;
+    color:#ccc;
+    pointer-events: none;
+}
+
+
+.main .box{
+    padding: 10px;
+    margin-bottom: 15px;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 0 3px #ddd;
+    border: solid 1px #ddd;;
+    
+    
+}
+.banner img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.main .box .text{
+    margin-top: 20px;
+    display: flex;;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text .username{
+    color:#1d3557;
+    font-size: 18px;
+}
+.visit-store{
+    text-decoration: none;
+    background-color: #4cc9f0;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.remove{
+    text-decoration: none;
+    background-color: #e63946;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.message{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+    width: calc(100% - 100px);
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1.5px #e63946;
+    background: white;
+    box-shadow: 0 0 3px #ddd;
+    padding: 7px 0;
+    display:  none;
+   
+   
+  }
+.message p{
+    font-size: 26px;
+  }

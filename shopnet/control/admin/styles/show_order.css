@@ -1,0 +1,100 @@
+.details{
+    margin: 40px 10px;
+    background-color: white;
+    box-shadow: 0 0 3px #ddd;
+    border: solid 1px #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.details h4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+    font-weight: 500;
+}
+.details h4 span{
+    white-space:wrap;
+    word-break: break-all;
+}
+.info{
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.shipping-info h5{
+    font-size: 17px;
+    font-weight: 600;
+}
+.shipping-info ul li span{
+    font-size: 15px;
+}
+.shipping-info ul li span:first-child{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.shipping-method  h5{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.shipping-method  h5 span:last-child{
+    font-weight:normal;
+    margin-left: 5px;
+} 
+
+.order-products{
+    margin: 30px 0;
+    max-width: 100%;
+    overflow-x: auto;
+
+
+}
+.order-products table{
+    width: 100%;
+    border: solid 1px #000;
+    border-collapse: collapse;
+}
+.order-products tbody tr:nth-child(odd){
+    background-color: #F7F7F7;
+}
+.order-products td ,.order-products th{
+    padding: 2px;
+    border: solid 1px #000;
+    text-align: center;
+    vertical-align: middle;
+}
+.order-products td img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    position: relative;
+    top: 5px
+}
+.variants p span:first-child{
+    font-weight: 600;
+    margin-right: 4px;
+}
+.unit-price, td.total{
+    font-weight: 600;
+}
+.invoice{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    max-width: 350px;
+    justify-content: space-between;
+}
+
+.invoice h5{
+    font-size: 16px;
+}
+.order-status select{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 4px 7px;
+    margin-top: 20px;
+}

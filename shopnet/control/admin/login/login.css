@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  body {
+    background-color:#4361ee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+  }
+  .form{
+    background-color: #fff;
+    width: 330px;
+    position: relative;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-left:auto;
+    overflow: hidden;
+  }
+
+  h1 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+  }
+  h1 span {
+    background-image: linear-gradient(150deg, #4361ee, #9113a4, #1d3557);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h1 img {
+    width: 60px;
+    margin-right: 10px;
+  }
+  .form div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0px;
+  }
+
+ .error{
+    color:#721c24;
+    background-color:  #f8d7da;
+    border-radius: 5px;
+    margin:20px 0;
+    padding: 10px;
+    text-align: center;
+    display: none;
+ }
+  i:not(.fa-eye){
+    margin-right: 6px;
+    font-size: 17px;
+    color:#4361ee
+  }
+ input{
+    outline-color:#4361ee;
+    border: solid 1.5px blue;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    overflow: hidden;
+ }
+
+ .fa-eye{
+    position: absolute;
+    top:50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+ }
+ i.active{
+    color:#4361ee
+ }
+ form > button{
+    color:#fff;
+    border: solid 1.5px #4361ee;
+    background-color: #4361ee;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+
+ }
+ 
+ form > button::after{
+    content: "";
+    width: 150px;
+    height: 100px;
+    border-radius: 70%;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translate(100%,-50%);
+    background-color: #fff;
+    transition: 0.3s;
+    z-index: -1;
+ }
+ form > button:hover{
+    color:#4361ee
+ }
+ form > button:hover::after{
+
+    left:-10px;
+    transform: translate(0,-50%);
+    
+   
+ }
+ .forgot{
+  color:grey;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+  width: fit-content;
+ }
+ .forgot:hover{
+  text-decoration: underline;
+  transition: 0.2s;
+ }
+ @media screen and (max-width: 630px) {
+
+   input, textarea{
+     outline: none;
+   }
+ 
+ }
