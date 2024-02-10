@@ -1,4 +1,4 @@
-# ShopNet Ecommerce Platform
+# ShopNet Multivendor Ecommerce Platform
 
 Welcome to ShopNet Ecommerce Platform, a comprehensive solution for creating an online marketplace. ShopNet is built using HTML, CSS, JavaScript, and PHP, offering a range of features to facilitate online buying and selling.
 
